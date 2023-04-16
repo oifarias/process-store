@@ -95,9 +95,8 @@ export default function CaptionCarousel() {
             position="relative"
             backgroundPosition="center center"
             backgroundRepeat="no-repeat"
-            backgroundSize="cover"
+            backgroundSize="auto"
             backgroundImage={card.image}
-            // bgPosition={}
           ></Box>
         ))}
       </Slider>

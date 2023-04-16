@@ -77,7 +77,15 @@ export default function Simple() {
           <Stack spacing={{ base: 6, md: 10 }}>
             <Box as={"header"} marginRight={"auto"}>
               <Title size="3em" title={infos.name} />
-              <Text color={"gray.900"} fontWeight={300} fontSize={"2xl"}>
+              <Text
+                color={"gray.900"}
+                fontWeight={300}
+                fontSize={"2xl"}
+                _dark={{
+                  bg: "gray.600",
+                  color: "white",
+                }}
+              >
                 {`R$ ${infos.mensal?.toFixed(2)}`}
               </Text>
             </Box>
@@ -125,7 +133,11 @@ export default function Simple() {
           </Stack>
         </SimpleGrid>
         <Box>
-          <ThreeTierPricing productId={id} infos={infos} listValues={listValues}/>
+          <ThreeTierPricing
+            productId={id}
+            infos={infos}
+            listValues={listValues}
+          />
         </Box>
       </Container>
     )
