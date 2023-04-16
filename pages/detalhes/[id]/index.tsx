@@ -25,7 +25,24 @@ export default function Simple() {
   const req = Mock.filter((x) => x.id === id);
   const infos = req[0];
   console.log("infos", infos);
-
+  const listValues = [
+    {
+      title: "Mensal",
+      price: infos?.mensal,
+    },
+    {
+      title: "Trimestral",
+      price: infos?.trimestral,
+    },
+    {
+      title: "Semestral",
+      price: infos?.semestral,
+    },
+    {
+      title: "Anual",
+      price: infos?.anual,
+    },
+  ];
   return (
     infos && (
       <Container maxW={"7xl"}>
@@ -108,7 +125,7 @@ export default function Simple() {
           </Stack>
         </SimpleGrid>
         <Box>
-          <ThreeTierPricing productId={id} infos={infos} />
+          <ThreeTierPricing productId={id} infos={infos} listValues={listValues}/>
         </Box>
       </Container>
     )

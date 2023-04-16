@@ -13,6 +13,7 @@ import {
   Stack,
   Text,
   useColorModeValue,
+  chakra,
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 import ProductSimple, { IProduct } from "../../../../components/ProductSimple";
@@ -27,6 +28,53 @@ interface PackageTierProps {
   typePlan: string;
   checked?: boolean;
 }
+const PackageTier = ({
+  title,
+  options,
+  typePlan,
+  checked = false,
+}: PackageTierProps) => {
+  const colorTextLight = checked ? "white" : "purple.600";
+  const bgColorLight = checked ? "purple.400" : "gray.300";
+  const colorTextDark = checked ? "white" : "purple.500";
+  const bgColorDark = checked ? "purple.400" : "gray.300";
+
+  return (
+    <Stack
+      p={3}
+      py={3}
+      justifyContent={{
+        base: "flex-start",
+        md: "space-around",
+      }}
+      direction={{
+        base: "column",
+        md: "row",
+      }}
+      alignItems={{ md: "center" }}
+    >
+      <Heading size={"md"}>{title}</Heading>
+      <List spacing={3} textAlign="start">
+        {options.map((desc, id) => (
+          <ListItem key={desc.id}>
+            <ListIcon as={FaCheckCircle} color="green.500" />
+            {desc.desc}
+          </ListItem>
+        ))}
+      </List>
+      <Heading size={"xl"}>{typePlan}</Heading>
+      <Stack>
+        <Button
+          size="md"
+          color={useColorModeValue(colorTextLight, colorTextDark)}
+          bgColor={useColorModeValue(bgColorLight, bgColorDark)}
+        >
+          Get Started
+        </Button>
+      </Stack>
+    </Stack>
+  );
+};
 
 const ThreeTierPricingHorizontal = () => {
   const router = useRouter();
@@ -54,21 +102,44 @@ const ThreeTierPricingHorizontal = () => {
 
   return (
     <Box py={6} px={5} display={"flex"} flexDirection={"column"}>
-      <Container maxW={"5xl"} mt={5}>
-        <Flex direction={"row"} gap={2} mb={'10px'}>
+      <Container maxW={"5xl"} mt={10}>
+        <Flex direction={"row"} gap={2}>
           <Title size="3em" title="Carrinho de compras" />
         </Flex>
-        {infos && (
-          <ProductSimple
-            name={infos.name}
-            mensal={infos.mensal}
-            isNew={infos.isNew}
-            imageURL={`../../${infos.imageURL}`}
-            id={infos.id}
-            description={infos.description}
-            key={infos.id + 100}
-          />
-        )}
+        <SimpleGrid
+          columns={{ base: 1, lg: 2 }}
+          spacing={{ base: 2, md: 2 }}
+          py={{ base: 5, md: 5 }}
+        >
+          {infos && (
+            <ProductSimple
+              name={infos.name}
+              mensal={infos.mensal}
+              isNew={infos.isNew}
+              imageURL={`../../${infos.imageURL}`}
+              id={infos.id}
+              description={infos.description}
+              key={infos.id + 100}
+            />
+          )}
+          <Box
+            display={"flex"}
+            justifyContent={"center"}
+            marginTop={"auto"}
+            style={{ cursor: "pointer" }}
+          >
+            <chakra.a href={`/sucesso`} display={"flex"}>
+              <Button
+                w="full"
+                style={{ cursor: "pointer" }}
+                colorScheme="black"
+                bgGradient="linear(to-l, heroGradientStart, heroGradientEnd)"
+              >
+                Finalizar a compra
+              </Button>
+            </chakra.a>
+          </Box>
+        </SimpleGrid>
         <Divider></Divider>
       </Container>
       <Box p={4}>
@@ -76,8 +147,11 @@ const ThreeTierPricingHorizontal = () => {
           <Flex mb="4">
             <Title size="2em" title="Recomendações"></Title>
           </Flex>
-
-          <Flex flexWrap="wrap" gridRowGap={10} justify="space-around">
+          <Text>
+            Aproveite e contrate uma nova solução para sua empresa, essa são as
+            recomendações de soluções que complementão a sua escolha
+          </Text>
+          <Flex flexWrap="wrap" gridRowGap={10} justify="space-around" mt={4}>
             {mocklist.map((x: IProduct) => {
               return (
                 <ProductSimple

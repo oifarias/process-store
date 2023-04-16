@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { Title } from "./Title";
 
-function PriceWrapper({ children }: { children: ReactNode }) {
+export function PriceWrapper({ children }: { children: ReactNode }) {
   return (
     <Box
       mb={4}
@@ -26,33 +26,16 @@ function PriceWrapper({ children }: { children: ReactNode }) {
   );
 }
 
-
 export interface ICard {
   idSelected?: any;
   id?: number;
   productId?: number;
   infos: any;
+  listValues: any[];
 }
 
 export default function ThreeTierPricing(props: ICard) {
-  const listValues = [
-    {
-      title: "Mensal",
-      price: props.infos?.mensal,
-    },
-    {
-      title: "Trimestral",
-      price: props.infos?.trimestral,
-    },
-    {
-      title: "Semestral",
-      price: props.infos?.semestral,
-    },
-    {
-      title: "Anual",
-      price: props.infos?.anual,
-    },
-  ];
+ 
   return (
     <Box py={1}>
       <VStack spacing={2} textAlign="center">
@@ -62,7 +45,7 @@ export default function ThreeTierPricing(props: ICard) {
         </Text>
       </VStack>
       <Flex flexWrap="wrap" gap={2} justify="space-around">
-        {listValues.map((x) => {
+        {props.listValues.map((x) => {
           return (
             <Stack
               direction={{ base: "column", md: "row" }}
@@ -72,6 +55,7 @@ export default function ThreeTierPricing(props: ICard) {
               py={10}
               borderColor={props.id === props.idSelected ? "blue.500" : ""}
               key={x.title}
+              style={{ cursor: "pointer" }}
             >
               <PriceWrapper>
                 <Box py={4} px={5}>
@@ -88,7 +72,7 @@ export default function ThreeTierPricing(props: ICard) {
                   </HStack>
                 </Box>
                 <VStack borderBottomRadius={"xl"}>
-                  <Box w="80%" pb={5}>
+                  <Box w="80%" pb={5} >
                     <chakra.a
                       href={`/carrinho/${
                         props.productId
