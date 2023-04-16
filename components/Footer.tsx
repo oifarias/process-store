@@ -7,7 +7,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-// import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { ReactNode } from 'react';
 import { Title } from './Title';
 
@@ -78,13 +78,13 @@ export default function SmallWithLogoLeft() {
         <Text>© 2023 Power by Open Circle </Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>
-            {/* <FaTwitter /> */}
+            <FaTwitter />
           </SocialButton>
           <SocialButton label={'YouTube'} href={'#'}>
-            {/* <FaYoutube /> */}
+            <FaYoutube />
           </SocialButton>
           <SocialButton label={'Instagram'} href={'#'}>
-            {/* <FaInstagram /> */}
+            <FaInstagram />
           </SocialButton>
         </Stack>
       </Container>

@@ -27,7 +27,6 @@ const TypeGlasess = () => {
 
   return (
     <>
-      
         <SimpleGrid columns={[2, 2, 3]} gap={[4, 6, 6]} paddingTop={10}>
           {mockType.map((v, i) => {
             return (

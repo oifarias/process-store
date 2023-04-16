@@ -10,6 +10,9 @@ import {
   Flex,
   Icon,
   IconButton,
+  Input,
+  InputGroup,
+  InputLeftElement,
   Link,
   Popover,
   PopoverContent,
@@ -22,6 +25,13 @@ import {
 import { useRouter } from "next/router";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 import { Title } from "./Title";
+import {
+  ChevronDownIcon,
+  ChevronRightIcon,
+  CloseIcon,
+  HamburgerIcon,
+  SearchIcon,
+} from "@chakra-ui/icons";
 export default function SideBar() {
   const { isOpen, onToggle } = useDisclosure();
   const router = useRouter();
@@ -63,15 +73,34 @@ export default function SideBar() {
           cursor={"pointer"}
           marginLeft={29}
         >
-          <Title title="Proces Store" size={"25px"}/>
+          <Title title="Proces Store" size={"25px"} />
         </Flex>
-
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "end" }}
+          marginLeft={10}
+        >
+          <InputGroup size={"sm"}>
+            <InputLeftElement
+              pointerEvents="none"
+              color="gray.300"
+              fontSize="0.8em"
+              children={<SearchIcon />}
+            />
+            <Input
+              placeholder="Pesquise a soulção que você precisa"
+              size="sm"
+              borderRadius={10}
+              borderColor="black"
+            />
+          </InputGroup>
+        </Flex>
         <Flex
           flex={{ base: 1 }}
           justify={{ base: "center", md: "end" }}
           marginRight={10}
         >
-          <Flex display={{ base: "none", md: "flex" }} ml={10} >
+          <Flex display={{ base: "none", md: "flex" }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
@@ -253,5 +282,5 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "Cadastre-se",
     href: "/login",
-  }
+  },
 ];
