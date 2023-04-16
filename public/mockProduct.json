@@ -1,38 +1,72 @@
 [
   {
-    "id":1,
-    "name": "Teste 1",
-    "price": 800.00,
+    "id": 1,
+    "name": "Miro",
+    "price": 800.0,
     "isNew": true,
     "imageURL": "imgs/miro3.jpg",
-     "reviews": {
+    "reviews": {
       "rating": 12,
       "numReviews": 30
     },
-    "description": "A plataforma visual colaborativa em formato de lousa online que une sua equipe a qualquer hora, de qualquer lugar."
+    "description": "A plataforma visual colaborativa em formato de lousa online que une sua equipe a qualquer hora, de qualquer lugar.",
+    "text": "Miro é a plataforma de quadro branco colaborativo on-line que permite que equipes distribuídas trabalhem juntas de maneira eficaz, desde brainstorming com notas adesivas digitais até planejamento e gerenciamento de fluxos de trabalho ágeis. Mais de 25.000.000 gerentes e proprietários de produtos, designers de UX/UI, treinadores ágeis e pensadores de design em todo o mundo usam o Miro para criar Next Big Things.",
+    "features": [],
+    "video":"https://www.youtube.com/embed/fM7GgjqBD5M"
   },
   {
     "id": 2,
-    "name": "Test2",
-    "price": 299,
+    "name": "Quickbooks",
+    "price": 17.5,
     "isNew": false,
-    "imageURL": "imgs/miro3.jpg",
+    "imageURL": "imgs/qb2.png",
     "reviews": {
-      "rating": 12,
-      "numReviews": 30
+      "rating": 4.8,
+      "numReviews": 11
     },
-    "description" : ""
+    "description": "Small business accounting software.",
+    "features": [
+      "What If Scenarios",
+      "1099 Preparation",
+      "401(k) Tracking",
+      "ACH Payment Processing",
+      "API",
+      "Account Reconciliation",
+      "Accounting",
+      "Accounts Payable",
+      "Accounts Receivable",
+      "Accrual Accounting",
+      "Activity Dashboard",
+      "Activity Tracking",
+      "Ad hoc Reporting",
+      "Address Validation",
+      "Aging Tracking",
+      "Approval Process Control"
+    ],
+    "video": "https://www.youtube.com/embed/fM7GgjqBD5M"
   },
   {
     "id": 3,
-    "name": "teste 3",
-    "price": 99,
-    "isNew": true,
-    "imageURL": "imgs/miro3.jpg",
+    "name": "Papaya Global",
+    "price": 20,
+    "isNew": false,
+    "imageURL": "imgs/tet.png",
     "reviews": {
-      "rating": 12,
-      "numReviews": 30
+      "rating": 4.1,
+      "numReviews": 325
     },
-    "description" : ""
+    "description": "Software de contabilidade para pequenas empresas.",
+    "text": "A Papaya Global está revolucionando a folha de pagamento global e o gerenciamento global da força de trabalho com nossa plataforma SaaS baseada em nuvem. Oferecemos soluções completas de folha de pagamento internacional, gerenciamento de força de trabalho desde a integração até benefícios, serviço EOR em mais de 100 países, gerenciamento de trabalhadores contratados e imigração.",
+    "features": [
+      "100% online",
+      "Activity Dashboard",
+      "Benefits Management",
+      "Budgeting/Forecasting",
+      "Cap Table Management",
+      "Compensation Management",
+      "Compliance Management",
+      "Compliance Tracking"
+    ],
+    "video": "https://www.youtube.com/embed/fM7GgjqBD5M"
   }
 ]

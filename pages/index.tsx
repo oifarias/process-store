@@ -23,10 +23,10 @@ export default function Home() {
       <Box marginTop={5} flex="center" justifyContent={"center"}>
         <Title title="Proces Store" size="3em" />
         <Text textAlign={"center"}>
-          Tudo que você precisa para sua empresa!{" "}
+          Tudo que você precisa para sua empresa!
         </Text>
         <Text textAlign={"center"}>
-          Pesquise pelo seu problema que traremos a melhor solução{" "}
+          Pesquise pelo seu problema que traremos a melhor solução
         </Text>
       </Box>
       <GridListWith />
@@ -42,11 +42,10 @@ export default function Home() {
                   imageURL={x.imageURL}
                   id={x.id}
                   description={x.description}
+                  key={x.id + 100}
                 />
               );
             })}
-            {/* <ProductSimple infos={infos[1] as IProduct}/>
-          <ProductSimple infos={infos[2] as IProduct}/> */}
           </Flex>
         </Container>
       </Box>

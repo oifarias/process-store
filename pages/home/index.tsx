@@ -1,8 +1,5 @@
-import { Box, Container, SimpleGrid } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { setTimeout } from "timers";
-import mockType from "../../public/mock.json";
-import Card from "../../components/Card";
 
 const TypeGlasess = () => {
   const [loading, setLoading] = useState(true);
@@ -27,23 +24,13 @@ const TypeGlasess = () => {
 
   return (
     <>
-        <SimpleGrid columns={[2, 2, 3]} gap={[4, 6, 6]} paddingTop={10}>
-          {mockType.map((v, i) => {
-            return (
-              <Card
-                content={v.description}
-                description={v.description}
-                title={v.typeName}
-                //  img={v.icon}
-                loading={loading}
-                id={v.idType}
-                idSelected={idSelected}
-                setIdSelected={setIdSelected}
-                key={`${v.idType}-${i}`}
-              />
-            );
-          })}
-        </SimpleGrid>
+      <iframe
+        width="560"
+        height="315"
+        src="https://testeeeeeeeeeeeesdadf.my.canva.site/"
+        title="about us"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      />
     </>
   );
 };
