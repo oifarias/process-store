@@ -10,13 +10,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ReactElement } from "react";
-import {
-  FcAbout,
-  FcAssistant,
-  FcCollaboration,
-  FcDonate,
-  FcManager,
-} from "react-icons/fc";
+import { FcCollaboration, FcDonate, FcManager } from "react-icons/fc";
 
 interface CardProps {
   heading: string;

@@ -2,7 +2,10 @@
   {
     "id": 1,
     "name": "Miro",
-    "price": 800.0,
+    "mensal": 299,
+    "trimestral": 850.00,
+    "semestral": 1500,
+    "anual": 1200,
     "isNew": true,
     "imageURL": "imgs/miro3.jpg",
     "reviews": {
@@ -13,11 +16,15 @@
     "text": "Miro é a plataforma de quadro branco colaborativo on-line que permite que equipes distribuídas trabalhem juntas de maneira eficaz, desde brainstorming com notas adesivas digitais até planejamento e gerenciamento de fluxos de trabalho ágeis. Mais de 25.000.000 gerentes e proprietários de produtos, designers de UX/UI, treinadores ágeis e pensadores de design em todo o mundo usam o Miro para criar Next Big Things.",
     "features": [],
     "video":"https://www.youtube.com/embed/fM7GgjqBD5M"
+    
   },
   {
     "id": 2,
     "name": "Quickbooks",
-    "price": 17.5,
+    "mensal": 350,
+    "trimestral": 900,
+    "semestral": 1800,
+    "anual": 3800,
     "isNew": false,
     "imageURL": "imgs/qb2.png",
     "reviews": {
@@ -48,7 +55,10 @@
   {
     "id": 3,
     "name": "Papaya Global",
-    "price": 20,
+    "mensal": 90,
+    "trimestral": 250,
+    "semestral": 500,
+    "anual": 1000,
     "isNew": false,
     "imageURL": "imgs/tet.png",
     "reviews": {

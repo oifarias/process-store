@@ -10,7 +10,6 @@ import {
   Image,
   Flex,
   VStack,
-  Button,
   SimpleGrid,
   StackDivider,
   List,
@@ -21,9 +20,9 @@ import ThreeTierPricing from "@/components/ThreeTierPricing";
 
 export default function Simple() {
   const router = useRouter();
-
   console.log(router.query.id);
-  const req = Mock.filter((x) => x.id === Number(router.query.id));
+  const id = Number(router.query.id);
+  const req = Mock.filter((x) => x.id === id);
   const infos = req[0];
   console.log("infos", infos);
 
@@ -61,30 +60,18 @@ export default function Simple() {
           <Stack spacing={{ base: 6, md: 10 }}>
             <Box as={"header"} marginRight={"auto"}>
               <Title size="3em" title={infos.name} />
-              <Text
-                color={"gray.900"}
-                fontWeight={300}
-                fontSize={"2xl"}
-              >
-                {`R$ ${infos.price?.toFixed(2)}`}
+              <Text color={"gray.900"} fontWeight={300} fontSize={"2xl"}>
+                {`R$ ${infos.mensal?.toFixed(2)}`}
               </Text>
             </Box>
 
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={"column"}
-              divider={
-                <StackDivider
-                  borderColor={"gray.600"}
-                />
-              }
+              divider={<StackDivider borderColor={"gray.600"} />}
             >
               <VStack spacing={{ base: 4, sm: 6 }}>
-                <Text
-                  color={"gray.400"}
-                  fontSize={"2xl"}
-                  fontWeight={"300"}
-                >
+                <Text color={"gray.400"} fontSize={"2xl"} fontWeight={"300"}>
                   {infos.description}
                 </Text>
                 <Text fontSize={"lg"}>{infos.description}</Text>
@@ -117,31 +104,12 @@ export default function Simple() {
                   <Rating rating={2} numReviews={100} />
                 </Flex>
               </Box>
-
-            {/* <Box>
-              <ThreeTierPricing />
-            </Box> */}
             </Stack>
-
-            <Button
-              rounded={"none"}
-              w={"full"}
-              mt={8}
-              size={"lg"}
-              py={"7"}
-              borderRadius={8}
-              bgGradient="linear(to-l, heroGradientStart, heroGradientEnd)"
-              color={"gray.900"}
-              textTransform={"uppercase"}
-              _hover={{
-                transform: "translateY(2px)",
-                boxShadow: "lg",
-              }}
-            >
-              Aderir
-            </Button>
           </Stack>
         </SimpleGrid>
+        <Box>
+          <ThreeTierPricing productId={id} infos={infos} />
+        </Box>
       </Container>
     )
   );

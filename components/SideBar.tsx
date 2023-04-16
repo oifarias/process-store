@@ -66,7 +66,7 @@ export default function SideBar() {
           cursor={"pointer"}
           marginLeft={29}
         >
-          <Title title="Proces Store" size={"25px"} />
+          <Title title="ProcesStore" size={"25px"} />
         </Flex>
         <Flex
           flex={{ base: 1 }}

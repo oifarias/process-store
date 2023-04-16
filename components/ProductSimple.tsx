@@ -1,17 +1,5 @@
-import {
-  Flex,
-  Circle,
-  Box,
-  Image,
-  Badge,
-  useColorModeValue,
-  Icon,
-  chakra,
-  Tooltip,
-  Text,
-} from "@chakra-ui/react";
+import { Flex, Circle, Box, Image, Badge, useColorModeValue, chakra, Text } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
-import { FiShoppingCart } from "react-icons/fi";
 
 const data = {
   isNew: true,
