@@ -63,7 +63,7 @@ export default function Simple() {
             <Box as={"header"} marginRight={"auto"}>
               <Title size="3em" title={infos.name} />
               <Text
-                color={useColorModeValue("gray.900", "gray.400")}
+                color={"gray.900"}
                 fontWeight={300}
                 fontSize={"2xl"}
               >
