@@ -1,0 +1,346 @@
+[
+  {
+    "idType": 1,
+    "typeName": "Incolor",
+    "description": "Lentes simples, sem proteções e tratamentos.",
+    "tip": "A lente incolor é ideal para locais de trabalho com ambientes claros, mas sem deficiência de luminosidade intensa. Cinzas: Ambiente com luminosidade intensa ou trabalhos à céu aberto.",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "CR INCOLOR",
+        "esferico": "6,6",
+        "cilindrico": "0,2",
+        "valor": 18
+      },
+      {
+        "id": 2,
+        "name": "CR INCOLOR CIL ESTENDIDO",
+        "esferico": "4,4",
+        "cilindrico": "2.25,4",
+        "valor": 25
+      },
+      {
+        "id": 3,
+        "name": "POLI INCOLOR",
+        "esferico": "4,6",
+        "cilindrico": "0,2",
+        "valor": 25
+      },
+      {
+        "id": 4,
+        "name": "POLI INCOLOR CIL ESTENDIDO",
+        "esferico": "4,4",
+        "cilindrico": "2.25,4",
+        "valor": 40
+      }
+    ]
+  },
+  {
+    "idType": 2,
+    "typeName": "Anti-Reflexo",
+    "description": "Lentes que diminui a entrada de luz.",
+    "tip": "O revestimento antirreflexo, também conhecido como revestimento AR, é uma camada fina aplicada à superfície das lentes dos óculos que permite que mais luz passe pelas lentes, melhorando a sua visão, reduzindo a quantidade de brilho que se reflete em suas lentes.",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "1.56 AR",
+        "esferico": "6,6",
+        "cilindrico": "0,2",
+        "valor": 50
+      },
+      {
+        "id": 2,
+        "name": "1.56 AR CIL ESTENDIDO",
+        "esferico": "4,4",
+        "cilindrico": "2.25,4",
+        "valor": 60
+      },
+      {
+        "id": 3,
+        "name": "1.56 AR MAX",
+        "esferico": "6,6",
+        "cilindrico": "4.25,6",
+        "valor": 100
+      },
+      {
+        "id": 4,
+        "name": "POLI AR",
+        "esferico": "6,6",
+        "cilindrico": "0,2",
+        "valor": 60
+      },
+      {
+        "id": 5,
+        "name": "POLI AR CIL ESTENDIDO",
+        "esferico": "4,4",
+        "cilindrico": "2.25,4",
+        "valor": 70
+      },
+      {
+        "id": 6,
+        "name": "POLI AR MAX",
+        "esferico": "6,6",
+        "cilindrico": "4.25,5",
+        "valor": 150
+      },
+      {
+        "id": 7,
+        "name": "1.61 AR",
+        "esferico": "6,8",
+        "cilindrico": "0,2",
+        "valor": 50
+      },
+      {
+        "id": 8,
+        "name": "1.61 AR CIL ESTENDIDO",
+        "esferico": "0,6",
+        "cilindrico": "2.25,4",
+        "valor": 80
+      },
+      {
+        "id": 9,
+        "name": "1.67 AR",
+        "esferico": "3,10",
+        "cilindrico": "0,2",
+        "valor": 100
+      },
+      {
+        "id": 10,
+        "name": "1.67 AR CIL ESTENDIDO",
+        "esferico": "3,10",
+        "cilindrico": "2.25,4",
+        "valor": 120
+      },
+      {
+        "id": 11,
+        "name": "1.67 AR MAX",
+        "esferico": "3,12",
+        "cilindrico": "0,2",
+        "valor": 150
+      },
+      {
+        "id": 12,
+        "name": "1.74 AR",
+        "esferico": "4,12",
+        "cilindrico": "0,2",
+        "valor": 390
+      }
+    ]
+  },
+  {
+    "idType": 3,
+    "typeName": "Anti-Blue",
+    "description": "Lentes com proteção da luz azul, para quem passa muito tempo na frente de aparelhos digitais",
+    "tip": "As Lentes Blue Control filtram a luz azul violeta emitida pelos aparelhos digitais, minimizando o brilho e melhorando o contraste para enxergar. Dessa forma, elas proporcionam um maior conforto visual ao neutralizar os efeitos da luz azul.",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "1.56 ANTBLUE",
+        "esferico": "6,6",
+        "cilindrico": "0,2",
+        "valor": 80
+      },
+      {
+        "id": 2,
+        "name": "1.56 ANTBLUE CIL ESTENDIDO",
+        "esferico": "6,6",
+        "cilindrico": "2.25,4",
+        "valor": 90
+      },
+      {
+        "id": 3,
+        "name": "1.56 ANTBLUE CIL MAX",
+        "esferico": "4,4",
+        "cilindrico": "4.25,6",
+        "valor": 120
+      },
+      {
+        "id": 4,
+        "name": "1.60 ANTBLUE",
+        "esferico": "4,4",
+        "cilindrico": "0,2",
+        "valor": 100
+      },
+      {
+        "id": 5,
+        "name": "1.67 ANTBLUE",
+        "esferico": "3,12",
+        "cilindrico": "0,2",
+        "valor": 200
+      },
+      {
+        "id": 6,
+        "name": "1.70 ANTBLUE",
+        "esferico": "4,12",
+        "cilindrico": "0,2",
+        "valor": 220
+      }
+    ]
+  },
+  {
+    "idType": 4,
+    "typeName": "Foto",
+    "tip": "As lentes que escurecem no sol são chamadas de lentes fotossensíveis, um tratamento ativado pelos raios UV emitidos pelo sol. Aliás, é por isso que só escurecem quando são expostas à luz ambiente. No entanto, as lentes fotossensíveis não substituem óculos escuros, mas diminuem o desconforto que a iluminação causa.",
+    "description": "Lentes com proteção UV que escurecem na luz do sol.",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "1.56 FOTO AR",
+        "esferico": "5,5",
+        "cilindrico": "0,2",
+        "valor": 50
+      },
+      {
+        "id": 2,
+        "name": "1.56 FOTO AR CIL ESTENDIDO",
+        "esferico": "4,4",
+        "cilindrico": "2.25,4",
+        "valor": 60
+      },
+      {
+        "id": 3,
+        "name": "POLI FOTO AR",
+        "esferico": "4,6",
+        "cilindrico": "0,2",
+        "valor": 90
+      },
+      {
+        "id": 4,
+        "name": "1.61 FOTO AR",
+        "esferico": "2,10",
+        "cilindrico": "0,2",
+        "valor": 100
+      }
+    ]
+  },
+  {
+    "idType": 5,
+    "typeName": "Foto Blue",
+    "description": "Lente com proteção contra luz azul e luz solar.",
+    "tip": "Além de proteger os olhos da luz azul, as lentes com este tratamento contém filtro contra os raios UV, que podem atingir a visão tanto em ambientes internos quanto externos. Portanto, também preserva o globo ocular dos danos provocados pela radiação solar.",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "1.56 FOTOBLUE",
+        "esferico": "6,6",
+        "cilindrico": "0,2",
+        "valor": 75
+      },
+      {
+        "id": 2,
+        "name": "1.56 FOTOBLUE CIL ESTENDIDO",
+        "esferico": "6,6",
+        "cilindrico": "2.25,4",
+        "valor": 85
+      },
+      {
+        "id": 3,
+        "name": "1.60 FOTOBLUE",
+        "esferico": "0,10",
+        "cilindrico": "0,2",
+        "valor": 100
+      },
+      {
+        "id": 4,
+        "name": "1.60 FOTOBLUE CIL. ESTENDIDO",
+        "esferico": "0,8",
+        "cilindrico": "2.25,4",
+        "valor": 110
+      }
+    ]
+  },
+  {
+    "idType": 6,
+    "typeName": "Solar",
+    "description": "Lentes solar com proteção UVB.",
+    "tip": "Lentes solar simples para oculos de sol",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "TOTAL CINZA/MARROM/G-15",
+        "esferico": "0,0",
+        "cilindrico": "0,0",
+        "valor": 25
+      },
+      {
+        "id": 2,
+        "name": "DEGRADÊ CINZA/MARROM/G-15",
+        "esferico": "0,0",
+        "cilindrico": "0,0",
+        "valor": 25
+      }
+    ]
+  },
+  {
+    "idType": 7,
+    "typeName": "Polarizada",
+    "description": "Lentes solares com proteção UVA e UVB.",
+    "tip": "contém uma tecnologia bloqueadora de luz intensa, a qual reduz os reflexos, oferecendo 100% de proteção. Quando a luz chega na superfície da lente, se espalha como um reflexo na água ou na estrada, garantindo alívio total aos seus olhos.",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "TOTAL CINZA / MARROM / G-15",
+        "esferico": "0,0",
+        "cilindrico": "0,0",
+        "valor": 25
+      },
+      {
+        "id": 2,
+        "name": "DEGRADÊ CINZA/MARROM/G-15",
+        "esferico": "0,0",
+        "cilindrico": "0,0",
+        "valor": 25
+      },
+      {
+        "id": 3,
+        "name": "TOTAL NIGHT DRIVE",
+        "esferico": "0,0",
+        "cilindrico": "0,0",
+        "valor": 25
+      },
+      {
+        "id": 4,
+        "name": "ESPELHADA COLORIDA",
+        "esferico": "0,0",
+        "cilindrico": "0,0",
+        "valor": 30
+      }
+    ]
+  },
+  {
+    "idType": 8,
+    "typeName": "Multi-Focal",
+    "description": "Lentes indicadas para pessoas que não enxergam de perto e longe.",
+    "tip": "Elas atendem visão de perto, visão intermediária e visão de longe, de maneira gradual. Ou seja, diferente das lentes bifocais, com dois focos de visão, as lentes multifocais contam com três focos de visão",
+    "subtypes": [
+      {
+        "id": 1,
+        "name": "MULTIFOCAL PRONTO INCOLOR",
+        "esferico": "0,2",
+        "cilindrico": "1,3",
+        "valor": 35
+      },
+      {
+        "id": 2,
+        "name": "MULTIFOCAL PRONTO AR",
+        "esferico": "1,2",
+        "cilindrico": "1,3",
+        "valor": 40
+      },
+      {
+        "id": 3,
+        "name": "MULTIFOCAL PRONTO ANTBLUE",
+        "esferico": "0,3",
+        "cilindrico": "1,3",
+        "valor": 80
+      },
+      {
+        "id": 4,
+        "name": "MULTIFOCAL PRONTO FOTO AR",
+        "esferico": "03",
+        "cilindrico": "1,3",
+        "valor": 100
+      }
+    ]
+  }
+]
