@@ -13,12 +13,11 @@ import {
   Button,
   SimpleGrid,
   StackDivider,
-  useColorModeValue,
   List,
   ListItem,
 } from "@chakra-ui/react";
-import { features } from "process";
 import { Rating } from "@/components/ProductSimple";
+import ThreeTierPricing from "@/components/ThreeTierPricing";
 
 export default function Simple() {
   const router = useRouter();
@@ -76,13 +75,13 @@ export default function Simple() {
               direction={"column"}
               divider={
                 <StackDivider
-                  borderColor={useColorModeValue("gray.200", "gray.600")}
+                  borderColor={"gray.600"}
                 />
               }
             >
               <VStack spacing={{ base: 4, sm: 6 }}>
                 <Text
-                  color={useColorModeValue("gray.500", "gray.400")}
+                  color={"gray.400"}
                   fontSize={"2xl"}
                   fontWeight={"300"}
                 >
@@ -119,56 +118,9 @@ export default function Simple() {
                 </Flex>
               </Box>
 
-              {/* <Box>
-                <Flex marginRight={"auto"} marginBottom={2}>
-                  <Title size="1.7em" title="Product Details" />
-                </Flex>
-                <List spacing={2}>
-                  <ListItem>
-                    <Text as={"span"} fontWeight={"bold"}>
-                      Between lugs:
-                    </Text>{" "}
-                    20 mm
-                  </ListItem>
-                  <ListItem>
-                    <Text as={"span"} fontWeight={"bold"}>
-                      Bracelet:
-                    </Text>{" "}
-                    leather strap
-                  </ListItem>
-                  <ListItem>
-                    <Text as={"span"} fontWeight={"bold"}>
-                      Case:
-                    </Text>{" "}
-                    Steel
-                  </ListItem>
-                  <ListItem>
-                    <Text as={"span"} fontWeight={"bold"}>
-                      Case diameter:
-                    </Text>{" "}
-                    42 mm
-                  </ListItem>
-                  <ListItem>
-                    <Text as={"span"} fontWeight={"bold"}>
-                      Dial color:
-                    </Text>{" "}
-                    Black
-                  </ListItem>
-                  <ListItem>
-                    <Text as={"span"} fontWeight={"bold"}>
-                      Crystal:
-                    </Text>{" "}
-                    Domed, scratch‑resistant sapphire crystal with
-                    anti‑reflective treatment inside
-                  </ListItem>
-                  <ListItem>
-                    <Text as={"span"} fontWeight={"bold"}>
-                      Water resistance:
-                    </Text>{" "}
-                    5 bar (50 metres / 167 feet){" "}
-                  </ListItem>
-                </List>
-              </Box> */}
+            {/* <Box>
+              <ThreeTierPricing />
+            </Box> */}
             </Stack>
 
             <Button
@@ -179,7 +131,7 @@ export default function Simple() {
               py={"7"}
               borderRadius={8}
               bgGradient="linear(to-l, heroGradientStart, heroGradientEnd)"
-              color={useColorModeValue("white", "gray.900")}
+              color={"gray.900"}
               textTransform={"uppercase"}
               _hover={{
                 transform: "translateY(2px)",
