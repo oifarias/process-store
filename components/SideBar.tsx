@@ -1,9 +1,3 @@
-// import {
-//   ChevronDownIcon,
-//   ChevronRightIcon,
-//   CloseIcon,
-//   HamburgerIcon,
-// } from "@chakra-ui/icons";
 import {
   Box,
   Collapse,
@@ -24,7 +18,13 @@ import {
 import { useRouter } from "next/router";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 import { Title } from "./Title";
-import { ChevronDownIcon, ChevronRightIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import {
+  ChevronDownIcon,
+  ChevronRightIcon,
+  CloseIcon,
+  HamburgerIcon,
+} from "@chakra-ui/icons";
+import { FiShoppingCart } from "react-icons/fi";
 export default function SideBar() {
   const { isOpen, onToggle } = useDisclosure();
   const router = useRouter();
@@ -79,10 +79,10 @@ export default function SideBar() {
               size="sm"
               borderRadius={10}
               borderColor="black"
-                 _dark={{
-                          bg: "gray.900",
-                          color: "white",
-                        }}
+              _dark={{
+                bg: "gray.900",
+                color: "white",
+              }}
             />
           </InputGroup>
         </Flex>
@@ -112,6 +112,7 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={"row"} spacing={4}>
+      <Icon as={FiShoppingCart} h={6} w={6} alignSelf={"center"} />
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>

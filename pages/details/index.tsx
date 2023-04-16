@@ -24,19 +24,31 @@ export default function Simple() {
         spacing={{ base: 8, md: 10 }}
         py={{ base: 18, md: 24 }}
       >
-        <Flex>
-          <Image
-            rounded={"md"}
-            alt={"product image"}
-            src={
-              "https://images.unsplash.com/photo-1596516109370-29001ec8ec36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2Mzg5MzY2MzE&ixlib=rb-1.2.1&q=80&w=1080"
-            }
-            fit={"cover"}
-            align={"center"}
-            w={"100%"}
-            h={{ base: "100%", sm: "400px", lg: "500px" }}
-          />
-        </Flex>
+        <Stack spacing={{ base: 2, md: 3 }}>
+          <Flex>
+            <iframe
+              width="800"
+              height="400"
+              src="https://www.youtube.com/embed/dnEvROyP_MM"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ></iframe>
+          </Flex>
+          <Flex>
+            <Image
+              rounded={"md"}
+              alt={"product image"}
+              src={
+                "https://images.unsplash.com/photo-1596516109370-29001ec8ec36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyODE1MDl8MHwxfGFsbHx8fHx8fHx8fDE2Mzg5MzY2MzE&ixlib=rb-1.2.1&q=80&w=1080"
+              }
+              fit={"cover"}
+              align={"center"}
+              w={"100%"}
+              h={{ base: "100%", sm: "400px", lg: "500px" }}
+            />
+          </Flex>
+        </Stack>
+
         <Stack spacing={{ base: 6, md: 10 }}>
           <Box as={"header"} marginRight={"auto"}>
             <Title size="3em" title=" Automatic Watch" />
