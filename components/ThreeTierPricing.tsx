@@ -26,24 +26,6 @@ function PriceWrapper({ children }: { children: ReactNode }) {
   );
 }
 
-const list = [
-  {
-    title: "Mensal",
-    price: "299,00",
-  },
-  {
-    title: "Trimestral",
-    price: "850,00",
-  },
-  {
-    title: "Semestral",
-    price: "1500,00",
-  },
-  {
-    title: "Anual",
-    price: "1200,00",
-  },
-];
 
 export interface ICard {
   idSelected?: any;
@@ -70,7 +52,7 @@ export default function ThreeTierPricing(props: ICard) {
       title: "Anual",
       price: props.infos?.anual,
     },
-  ]
+  ];
   return (
     <Box py={1}>
       <VStack spacing={2} textAlign="center">
@@ -80,7 +62,7 @@ export default function ThreeTierPricing(props: ICard) {
         </Text>
       </VStack>
       <Flex flexWrap="wrap" gap={2} justify="space-around">
-        {list.map((x) => {
+        {listValues.map((x) => {
           return (
             <Stack
               direction={{ base: "column", md: "row" }}
@@ -89,6 +71,7 @@ export default function ThreeTierPricing(props: ICard) {
               spacing={{ base: 4, lg: 10 }}
               py={10}
               borderColor={props.id === props.idSelected ? "blue.500" : ""}
+              key={x.title}
             >
               <PriceWrapper>
                 <Box py={4} px={5}>
@@ -107,7 +90,9 @@ export default function ThreeTierPricing(props: ICard) {
                 <VStack borderBottomRadius={"xl"}>
                   <Box w="80%" pb={5}>
                     <chakra.a
-                      href={`/carrinho/${props.productId}/${x.title.toLowerCase()}`}
+                      href={`/carrinho/${
+                        props.productId
+                      }/${x.title.toLowerCase()}`}
                       display={"flex"}
                     >
                       <Button

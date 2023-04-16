@@ -1,16 +1,13 @@
 import Head from "next/head";
 import CaptionCarousel from "@/components/CaptionCarousel";
-import { Box, Container, Flex, Text } from "@chakra-ui/react";
+import { Box, Container, Divider, Flex, Text } from "@chakra-ui/react";
 import ProductSimple, { IProduct } from "@/components/ProductSimple";
 import { Title } from "@/components/Title";
 import GridListWith from "@/components/GridListWith";
 import Mock from "../public/mockProduct.json";
-import { useState } from "react";
 
 export default function Home() {
-
   const infos = Mock;
-  const [idSelected, setIdSelected] = useState(0);
 
   return (
     <>
@@ -32,7 +29,9 @@ export default function Home() {
           Pesquise pelo seu problema que traremos a melhor solução
         </Text>
       </Box>
+
       <GridListWith />
+      <Divider></Divider>
       <Box p={4}>
         <Container maxW={"7xl"}>
           <Flex flexWrap="wrap" gridRowGap={10} justify="space-around">
@@ -40,7 +39,7 @@ export default function Home() {
               return (
                 <ProductSimple
                   name={x.name}
-                  price={x.price}
+                  mensal={x.mensal}
                   isNew={x.isNew}
                   imageURL={x.imageURL}
                   id={x.id}

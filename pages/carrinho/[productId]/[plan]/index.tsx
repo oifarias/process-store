@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Container,
+  Divider,
   Flex,
   Heading,
   Icon,
@@ -14,7 +15,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
-import ProductSimple from "../../../../components/ProductSimple";
+import ProductSimple, { IProduct } from "../../../../components/ProductSimple";
 import { useRouter } from "next/router";
 import Mock from "../../../../public/mockProduct.json";
 import { Title } from "@/components/Title";
@@ -74,8 +75,6 @@ const PackageTier = ({
   );
 };
 
-
-
 const ThreeTierPricingHorizontal = () => {
   const router = useRouter();
   console.log(router.query.productId);
@@ -84,7 +83,7 @@ const ThreeTierPricingHorizontal = () => {
   const req = Mock.filter((x) => x.id === id);
   const infos = req[0];
   console.log("infos", infos);
-
+  const mocklist = Mock;
   const getPrice = (infos: any) => {
     if (plan === "mensal") {
       return infos.mensal;
@@ -98,8 +97,7 @@ const ThreeTierPricingHorizontal = () => {
   };
 
   const valor = getPrice(infos);
-console.log("valor", valor)
-
+  console.log("valor", valor);
 
   return (
     <Box py={6} px={5} display={"flex"} flexDirection={"column"}>
@@ -115,7 +113,7 @@ console.log("valor", valor)
           {infos && (
             <ProductSimple
               name={infos.name}
-              price={infos.mensal}
+              mensal={infos.mensal}
               isNew={infos.isNew}
               imageURL={`../../${infos.imageURL}`}
               id={infos.id}
@@ -123,8 +121,35 @@ console.log("valor", valor)
               key={infos.id + 100}
             />
           )}
+          <Box>
+            
+          </Box>
         </SimpleGrid>
+        <Divider></Divider>
       </Container>
+      <Box p={4}>
+        <Container maxW={"7xl"}>
+          <Flex mb="4">
+            <Title size="2em" title="Recomendações"></Title>
+          </Flex>
+
+          <Flex flexWrap="wrap" gridRowGap={10} justify="space-around">
+            {mocklist.map((x: IProduct) => {
+              return (
+                <ProductSimple
+                  name={x.name}
+                  mensal={x.mensal}
+                  isNew={x.isNew}
+                  imageURL={`../../${x.imageURL}`}
+                  id={x.id}
+                  description={x.description}
+                  key={x.id + 100}
+                />
+              );
+            })}
+          </Flex>
+        </Container>
+      </Box>
     </Box>
   );
 };

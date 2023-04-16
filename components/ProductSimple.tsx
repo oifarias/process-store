@@ -19,7 +19,7 @@ export interface RatingProps {
 export interface IProduct {
   id: number;
   name?: string;
-  price?: number;
+  mensal?: number;
   isNew?: boolean;
   imageURL?: string;
   reviews?: RatingProps;
@@ -109,7 +109,7 @@ function CaptionCarousel(infos: IProduct) {
                 fontSize="2xl"
                 color={useColorModeValue("gray.800", "white")}
               >
-                {`R$ ${infos.price?.toFixed(2)}`}
+                {`R$ ${infos.mensal?.toFixed(2)}`}
               </Box>
             </Flex>
             <Text mt={1} fontSize={"sm"}>
