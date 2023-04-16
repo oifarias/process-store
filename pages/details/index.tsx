@@ -14,7 +14,6 @@ import {
   List,
   ListItem,
 } from "@chakra-ui/react";
-import { MdLocalShipping } from "react-icons/md";
 
 export default function Simple() {
   return (

@@ -1,0 +1,38 @@
+[
+  {
+    "id":1,
+    "name": "Teste 1",
+    "price": 800.00,
+    "isNew": true,
+    "imageURL": "imgs/miro3.jpg",
+     "reviews": {
+      "rating": 12,
+      "numReviews": 30
+    },
+    "description": "A plataforma visual colaborativa em formato de lousa online que une sua equipe a qualquer hora, de qualquer lugar."
+  },
+  {
+    "id": 2,
+    "name": "Test2",
+    "price": 299,
+    "isNew": false,
+    "imageURL": "imgs/miro3.jpg",
+    "reviews": {
+      "rating": 12,
+      "numReviews": 30
+    },
+    "description" : ""
+  },
+  {
+    "id": 3,
+    "name": "teste 3",
+    "price": 99,
+    "isNew": true,
+    "imageURL": "imgs/miro3.jpg",
+    "reviews": {
+      "rating": 12,
+      "numReviews": 30
+    },
+    "description" : ""
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id":1,
+  "name": "Teste 1",
+  "price": 800.00,
+  "isNew": true,
+  "imageURL": "",
+  "reviews": {
+    "rating": 12,
+    "numReviews": 30
+  }
+}
