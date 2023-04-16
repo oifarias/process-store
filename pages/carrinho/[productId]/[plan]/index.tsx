@@ -121,8 +121,16 @@ const ThreeTierPricingHorizontal = () => {
               key={infos.id + 100}
             />
           )}
-          <Box>
-            
+          <Box display={"flex"} justifyContent={"flex-end"} marginTop={""} >
+            <Button
+              w="full"
+              colorScheme="black"
+              bgGradient="linear(to-l, heroGradientStart, heroGradientEnd)"
+              display={"flex"}
+              
+            >
+              Finalizar a compra
+            </Button>
           </Box>
         </SimpleGrid>
         <Divider></Divider>
