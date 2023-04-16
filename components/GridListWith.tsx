@@ -68,7 +68,6 @@ export default function gridListWith() {
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
             heading={"Especialista"}
-            // icon={<Icon as={FcAssistant} w={10} h={10} />}
             icon={<Icon as={FcManager} w={10} h={10} />}
             description={
               "Contrate um especialista para indicar e orientar as melhores ferramentas para seu negocio."
