@@ -1,8 +1,9 @@
 import Head from "next/head";
 import CaptionCarousel from "@/components/CaptionCarousel";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Container, Flex, Text } from "@chakra-ui/react";
 import ProductSimple from "@/components/ProductSimple";
 import { Title } from "@/components/Title";
+import GridListWith from "@/components/GridListWith";
 
 export default function Home() {
   return (
@@ -16,15 +17,24 @@ export default function Home() {
       <Box flex={"center"}>
         <CaptionCarousel />
       </Box>
-      <Box marginTop={10} flex="center" justifyContent={"center"}>
+      <Box marginTop={5} flex="center" justifyContent={"center"}>
         <Title title="Proces Store" size="3em" />
-        <Text textAlign={"center"}>Tudo que você precisa para sua empresa! </Text>
-        <Text textAlign={"center"}>Pesquise pelo seu problema que traremos a melhor solução </Text>
+        <Text textAlign={"center"}>
+          Tudo que você precisa para sua empresa!{" "}
+        </Text>
+        <Text textAlign={"center"}>
+          Pesquise pelo seu problema que traremos a melhor solução{" "}
+        </Text>
       </Box>
-      <Box marginTop={10} display="flex">
-        <ProductSimple />
-        <ProductSimple />
-        <ProductSimple />
+      <GridListWith />
+      <Box p={4}>
+      <Container maxW={'7xl'} >
+        <Flex flexWrap="wrap" gridRowGap={10} justify="space-around">
+          <ProductSimple />
+          <ProductSimple />
+          <ProductSimple />
+        </Flex>
+      </Container>
       </Box>
     </>
   );
