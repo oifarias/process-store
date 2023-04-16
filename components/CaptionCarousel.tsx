@@ -41,7 +41,7 @@ export default function CaptionCarousel() {
       image: "imgs/jira.jpg",
     },
     {
-      image: "imgs/hubspots.jpg",
+      image: "imgs/hubspot.jpg",
     },
   ];
 

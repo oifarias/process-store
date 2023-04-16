@@ -12,7 +12,6 @@ import {
   IconButton,
   Input,
   InputGroup,
-  InputLeftElement,
   Link,
   Popover,
   PopoverContent,
@@ -25,13 +24,7 @@ import {
 import { useRouter } from "next/router";
 import { DarkModeSwitch } from "./DarkModeSwitch";
 import { Title } from "./Title";
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  CloseIcon,
-  HamburgerIcon,
-  SearchIcon,
-} from "@chakra-ui/icons";
+import { ChevronDownIcon, ChevronRightIcon, CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 export default function SideBar() {
   const { isOpen, onToggle } = useDisclosure();
   const router = useRouter();
@@ -81,17 +74,15 @@ export default function SideBar() {
           marginLeft={10}
         >
           <InputGroup size={"sm"}>
-            {/* <InputLeftElement
-              pointerEvents="none"
-              color="gray.300"
-              fontSize="0.8em"
-              children={<SearchIcon />}
-            /> */}
             <Input
               placeholder="Pesquise a soulção que você precisa"
               size="sm"
               borderRadius={10}
               borderColor="black"
+                 _dark={{
+                          bg: "gray.900",
+                          color: "white",
+                        }}
             />
           </InputGroup>
         </Flex>
