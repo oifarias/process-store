@@ -74,7 +74,7 @@ export default function SmallWithLogoLeft() {
         spacing={4}
         justify={{ base: 'center', md: 'space-between' }}
         align={{ base: 'center', md: 'center' }}>
-        <Title title="Proces Store" size={"35px"}/>
+        <Title title="ProcesStoreStore" size={"35px"}/>
         <Text>© 2023 Power by Open Circle </Text>
         <Stack direction={'row'} spacing={6}>
           <SocialButton label={'Twitter'} href={'#'}>

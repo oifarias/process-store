@@ -21,7 +21,7 @@ export default function Home() {
         <CaptionCarousel />
       </Box>
       <Box marginTop={5} flex="center" justifyContent={"center"}>
-        <Title title="Proces Store" size="3em" />
+        <Title title="ProcesStoreStore" size="3em" />
         <Text textAlign={"center"}>
           Tudo que você precisa para sua empresa!
         </Text>
