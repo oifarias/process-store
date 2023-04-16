@@ -81,12 +81,12 @@ export default function SideBar() {
           marginLeft={10}
         >
           <InputGroup size={"sm"}>
-            <InputLeftElement
+            {/* <InputLeftElement
               pointerEvents="none"
               color="gray.300"
               fontSize="0.8em"
               children={<SearchIcon />}
-            />
+            /> */}
             <Input
               placeholder="Pesquise a soulção que você precisa"
               size="sm"
